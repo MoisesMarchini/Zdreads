@@ -88,14 +88,15 @@ function BeginCarousel() {
 
     carousel.addEventListener('mouseenter', hover);
     carousel.addEventListener('mouseleave', unhover);
-    controlLeft.addEventListener('mouseenter', () => {
-        increaseSpeed(-1)
-    });
-    controlRight.addEventListener('mouseenter', () => {
-        increaseSpeed(1)
-    });
-    controlLeft.addEventListener('mouseleave', unhover);
-    controlRight.addEventListener('mouseleave', unhover);
+
+    // controlLeft.addEventListener('mouseenter', () => {
+    //     increaseSpeed(-1)
+    // });
+    // controlRight.addEventListener('mouseenter', () => {
+    //     increaseSpeed(1)
+    // });
+    // controlLeft.addEventListener('mouseleave', unhover);
+    // controlRight.addEventListener('mouseleave', unhover);
 }
 
 BeginCarousel();

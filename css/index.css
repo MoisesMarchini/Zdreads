@@ -51,21 +51,102 @@ header .title {
     z-index: 1;
     text-transform: uppercase;
     margin: 0 auto;
+    font-size: 5vmin;
 }
 
 header .title h1 {
-    font-size: 5vmax;
+    font-size: 2.5em;
     text-transform: uppercase;
     color: var(--mainColor);
 }
 
 header .title p {
+    font-size: .8em;
     opacity: .5;
 }
 
 header .btn {
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1.25rem;
+    padding: .8rem;
     align-self: center;
-    text-transform: uppercase;
+}
+
+/* ------------- SECTION SLIDERS ------------- */
+
+.sliders {
+    display: grid;
+    gap: 1rem;
+}
+
+
+.section-slider {
+    background-color: var(--gray);
+    color: var(--black);
+    border-radius: 10px;
+}
+
+.section-slider .title {
+    justify-content: flex-start;
+    padding: .5rem;
+    gap: .5rem;
+    font-size: 4vmin;
+    position: relative;
+}
+
+.section-slider .title i {
+    font-size: 1.2em;
+}
+
+/* ------------- SECTION ABOUT ------------- */
+
+.section-about {
+    font-size: 5vmin;
+}
+
+.section-about .title {
+    display: grid;
+    justify-content: flex-start;
+    padding: .5em;
+    gap: .8em;
+    position: relative;
+}
+
+.section-about .title .text {
+    display: grid;
+    text-align: justify;
+    gap: .8em;
+    position: relative;
+}
+
+/* ------------- SECTION CONTACT ------------- */
+
+.section-contact {
+    font-size: 5vmin;
+}
+
+.section-contact .title {
+    display: grid;
+    justify-content: flex-start;
+    padding: .5em;
+    gap: .8em;
+    position: relative;
+}
+
+/* ------------- SECTION FOOTER ------------- */
+
+.section-footer {
+    font-size: 4vmin;
+    text-align: center;
+    background-color: var(--gray);
+    color: var(--black);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.section-footer .title {
+    text-align: center;
 }
 
 /* ------------- CAROUSEL 1 ------------- */
@@ -79,7 +160,7 @@ header .btn {
     position: relative;
     display: flex;
     overflow: hidden;
-    height: 40vw;
+    height: 40vmin;
 }
 
 .section-carousel1 .carousel ul {

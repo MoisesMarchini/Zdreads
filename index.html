@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z-Dreads</title>
+    <title>ZDreads</title>
 
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/e191a69187.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,7 +18,7 @@
         <div class="container nav-container">
             <div class="nav-logo">
                 <div class="logo-img"><i class="fa-solid fa-circle-notch"></i></div>
-                <h2 class="logo-text">Z-Dreads</h2>
+                <h2 class="logo-text">ZDreads</h2>
             </div>
             <div class="nav-right">
                 <input type="checkbox" id="nav-check">
@@ -27,26 +27,28 @@
                     <i class="fa-solid fa-arrow-right" id="nav-hide"></i>
                 </label>
                 <ul class="nav-menu">
-                    <li class="active"><a href="#">Início</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li class="index-0 active"><a href="#section-header" onclick="NavBtnGoToSection(0)">Início</a></li>
+                    <li class="index-1"><a href="#section-projects" onclick="NavBtnGoToSection(1)">Projetos</a></li>
+                    <li class="index-2"><a href="#section-about" onclick="NavBtnGoToSection(2)">Sobre nós</a></li>
+                    <li class="index-3"><a href="#section-contact" onclick="NavBtnGoToSection(3)">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <section class="bg-black section-header flex-center">
+        <section class="bg-black section-header flex-center" id="section-header">
             <div class="header-bg"></div>
             <header class="container header-container">
                 <div class="title">
-                    <h1>Título Aqui</h1>
-                    <p>Descrição a vontade ó</p>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia magna, sed
+                        porttitor urna euismod ut.</p>
                 </div>
                 <a href="#" class="btn btn-primary">Fale conosco</a>
             </header>
         </section>
-        <section class="section-carousel1 w100">
+
+        <section class="section-carousel1 w100 hidden">
             <button class="carousel-control right">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
@@ -65,7 +67,135 @@
                 </div>
             </div>
         </section>
-        <section class="section-cards">
+
+        <section class="section-about pad-Y" id="section-about">
+            <div class="container title">
+                <h2>Sobre nós</h2>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia magna, sed
+                        porttitor urna euismod ut. </p>
+                    <p> Quisque porta risus magna, nec fermentum est laoreet vitae. Maecenas sit amet risus luctus,
+                        ultricies orci sit amet, placerat mauris. </p>
+                    <p>Vestibulum
+                        malesuada augue sed egestas mollis. Phasellus gravida eros quis urna pretium, at consectetur
+                        risus
+                        dapibus. Morbi sit amet quam fermentum, rutrum est sed, pharetra arcu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sliders container">
+            <section class="section-slider section-dreads" id="section-projects">
+                <div class="container title flex-center "
+                    onclick="ToogleContent( '.section-dreads .slider-toogle','.section-dreads .slider-visibility')">
+                    <i class="fa-solid fa-star"></i>
+                    <h2>Dreads</h2>
+                    <div class="slider-toogle flex-center">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="slider-visibility">
+                    <div class="slider snaps-inline">
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&30">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&31">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&32">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&33">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&34">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-slider section-cortes">
+                <div class="container title flex-center"
+                    onclick="ToogleContent( '.section-cortes .slider-toogle','.section-cortes .slider-visibility')">
+                    <i class="fa-solid fa-scissors"></i>
+                    <h2>Cortes</h2>
+                    <div class="slider-toogle flex-center">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="slider-visibility">
+                    <div class="slider snaps-inline">
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&20">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&21">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&22">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&23">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&24">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section-slider section-hairStylist">
+                <div class="container title flex-center"
+                    onclick="ToogleContent( '.section-hairStylist .slider-toogle','.section-hairStylist .slider-visibility')">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Hair Stylist</h2>
+                    <div class="slider-toogle flex-center">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="slider-visibility">
+                    <div class="slider snaps-inline">
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&25">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&26">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&27">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&28">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://source.unsplash.com/random/?Dread&29">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="section-contact pad-Y" id="section-contact">
+            <div class="container title">
+                <h2>Contato</h2>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet lacinia magna, sed
+                        porttitor urna euismod ut. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-footer">
+            <footer>
+                <div class="container title">
+                    <p>&COPY; 2022 - ZDreads</p>
+                    <br>
+                    <p>Desenvolvido por Moisés Marchini.</p>
+                </div>
+            </footer>
+        </section>
+        <!-- <section class="section-cards">
             <div class="container">
                 <div class="cards">
                     <div class="card">
@@ -97,14 +227,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-
-
-
-    <script src="/js/index.js"></script>
-    <script src="/js/carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>
