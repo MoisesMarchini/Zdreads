@@ -1,0 +1,174 @@
+/* ------------- HEADER ------------- */
+
+.section-header {
+    height: 90vh;
+    position: relative;
+}
+
+.section-header::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: var(--mainColor);
+    mix-blend-mode: color;
+}
+
+.header-container {
+    height: calc(95% - 6rem);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.header-bg {
+    position: absolute;
+    background-color: var(--black);
+    background-image: url(https://images.unsplash.com/photo-1645958683892-2470d6b24dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=771&q=80);
+    opacity: .25;
+    background-position: bottom right;
+    background-attachment: local;
+    background-size: 200% auto;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+header .title {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+header .title h1 {
+    font-size: 5vmax;
+    text-transform: uppercase;
+    color: var(--mainColor);
+}
+
+header .title p {
+    opacity: .5;
+}
+
+header .btn {
+    align-self: center;
+    text-transform: uppercase;
+}
+
+/* ------------- CAROUSEL 1 ------------- */
+
+.section-carousel1 {
+    display: flex;
+    overflow: auto;
+}
+
+.section-carousel1 .carousel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 40vw;
+}
+
+.section-carousel1 .carousel ul {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+
+.section-carousel1 .carousel li {
+    flex-shrink: 0;
+    width: 40vmin;
+    height: 40vmin;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.carousel-control {
+    top: 0;
+    height: 100%;
+    position: absolute;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.carousel-control.right {
+    right: 0;
+}
+
+.carousel-control.left {
+    left: 0;
+}
+
+
+/* ------------- CARDS ------------- */
+
+.section-cards {
+    background: var(--white);
+    padding: 10px 0 30px;
+    clip-path: polygon(100% 0, 100% calc(100% - 4vh), 50% 100%, 0 calc(100% - 4vh), 0 0);
+}
+
+.cards {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 10px;
+    background: var(--white);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.card .card-icon {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 2em;
+    background: var(--mainColor);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.card .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card .title {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.card p {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: .8em;
+}

@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --black: #030306;
+    --white: #fff;
+    --mainColor: #ff5e00;
+    --darkMainColor: #5f2300;
+
+
+    --triangleUpPath: polygon(0 0, 0 100%, 50% 0, 100% 100%, 100% 0);
+    --triangleDownPath: polygon(50% 90%, 0 0, 0 100%, 100% 100%, 100% 0);
+}
+
+body {
+    background: var(--white);
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+section.fullvh {
+    height: 100vh;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.bg-maincolor {
+    background-color: var(--mainColor);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 2px solid var(--mainColor);
+    background: transparent;
+    color: var(--mainColor);
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    border: 2px solid var(--mainColor);
+    background: var(--mainColor);
+    color: var(--white);
+}
